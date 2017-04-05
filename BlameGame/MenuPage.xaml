@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="BlameGame.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlameGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="911" d:DesignHeight="502.667">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Viewbox Grid.Column="1" Margin="0">
+            <StackPanel VerticalAlignment="Center" Padding="20">
+                <TextBlock x:Name="lblGameName" TextWrapping="Wrap" Text="The Blame Game" FontSize="48" FontFamily="Segoe UI Semibold" Margin="0,0,0,200" VerticalAlignment="Center" TextAlignment="Center"/>
+                <Button x:Name="btnPlay" Content="Play Game" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0,20" Click="btnPlay_Click"/>
+                <Button x:Name="btnSelectCase" Content="Select Case" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0,20" Click="btnSelectCase_Click"/>
+            </StackPanel>
+        </Viewbox>
+
+    </Grid>
+</Page>

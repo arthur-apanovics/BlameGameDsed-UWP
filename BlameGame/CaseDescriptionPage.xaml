@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="BlameGame.CaseDescriptionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlameGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" MinWidth="700" MinHeight="400" d:DesignWidth="1339" d:DesignHeight="847">
+    <Page.DataContext>
+        <local:CaseConstructor/>
+    </Page.DataContext>
+
+    <Grid Background="White">
+
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="700" MinHeight="400" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border x:Name="border" Margin="0" Background="Gainsboro">
+                <TextBlock x:Name="lblTitle" TextWrapping="Wrap" Text="{Binding CaseStrings.CaseTitle}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="32" FontWeight="Bold" Margin="50,0,0,0"/>
+            </Border>
+            <TextBlock x:Name="lblCaseContent" TextWrapping="Wrap" Text="{Binding CaseStrings.CaseContent}" Margin="50" FontSize="32" Grid.Row="1"/>
+            <Rectangle Fill="Gainsboro" Height="5" Grid.RowSpan="2" VerticalAlignment="Bottom" Margin="100,0"/>
+            <TextBlock x:Name="lblTutorial" Margin="50,50,50,0" FontSize="24" Grid.Row="2" Text="" TextWrapping="Wrap">
+                <Run Text="How to find the criminal:" FontStyle="Italic"/>
+                <LineBreak/>
+                <Run Text="Select a suspect and ask one of two questions. Use common sense to figure out who's the criminal."/>
+                <LineBreak/>
+                <LineBreak/>
+                <Run Text="If you need help, you can ask a professional interrogator to interrogate a suspect. But since you owe the interrogator money, he'll only interogate one suspect and leave after that."/>
+            </TextBlock>
+            <Button x:Name="btnStartGame" Content="Invite the suspects" FontSize="36" Click="btnStartGame_Click" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,100,50,0"/>
+        </Grid>
+    </Grid>
+</Page>

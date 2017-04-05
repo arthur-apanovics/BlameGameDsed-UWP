@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE case [
+  <!ELEMENT case (title, questions, PCDATA)>
+  <!ELEMENT title EMPTY>
+  <!ELEMENT questions (#PCDATA)>
+  <!ATTLIST case No ID #REQUIRED>
+  <!ATTLIST title name CDATA #REQUIRED>
+  <!ATTLIST questions q1 CDATA #IMPLIED>
+  <!ATTLIST questions q2 CDATA #IMPLIED>
+]>
+  <case No ="1">
+    <title name = "Mystery of the missing flash drive" /> 
+    <questions q1 ="Did you do it?" q2 = "Why did you do it?" />
+  Team New Zealand boss Grant Dalton believes Oracle's constant presence on their Auckland trainings hints at a fast Kiwi boat for the looming America's Cup.
+  Team New Zealand confirmed on Thursday they have concluded their training in Auckland and will dismantle their new AC50 to be air-freighted to Bermuda on April 9 along with the rest of their base infrastructure.
+  They will resume training there in the final buildup to the opening Louis Vuitton Cup races on May 27 (NZ time)
+  </case>
