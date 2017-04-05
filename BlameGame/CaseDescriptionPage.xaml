@@ -27,7 +27,7 @@
             <TextBlock x:Name="lblTutorial" Margin="50,50,50,0" FontSize="24" Grid.Row="2" Text="" TextWrapping="Wrap">
                 <Run Text="How to find the criminal:" FontStyle="Italic"/>
                 <LineBreak/>
-                <Run Text="Select a suspect and ask one of two questions. Use common sense to figure out who's the criminal."/>
+                <Run Text="Select a suspect and ask one of two questions. Use common sense to figure out who's the criminal. You have one minute to find the criminal before he runs away!"/>
                 <LineBreak/>
                 <LineBreak/>
                 <Run Text="If you need help, you can ask a professional interrogator to interrogate a suspect. But since you owe the interrogator money, he'll only interogate one suspect and leave after that."/>
