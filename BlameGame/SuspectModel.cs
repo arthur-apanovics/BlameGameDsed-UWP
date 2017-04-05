@@ -7,7 +7,7 @@ namespace BlameGame
     /// This class holds the object model for a suspect.
     /// </summary>
     
-    class SuspectModel
+    public class SuspectModel
     {
         // Properties are not named according to standards. Too late to change, don't want to break anything.
 

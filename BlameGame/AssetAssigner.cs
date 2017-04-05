@@ -2,7 +2,7 @@
 
 namespace BlameGame
 {
-    static class AssetAssigner
+    public static class AssetAssigner
     {
         private static string _imageDir;
         private static ResourceLoader _resourceFile;

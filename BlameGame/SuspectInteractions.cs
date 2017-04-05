@@ -2,13 +2,26 @@
 
 namespace BlameGame
 {
-    static class SuspectInteractions
+    public static class SuspectInteractions
     {
 
         /// <summary>
         /// Class is used to retrieve info from suspects. Extracted methods to tidy up main game page
         /// </summary>
-        
+
+        public static bool CheckIfSuspectIsCriminal(object selected)
+        {
+            bool isGuilty;
+            SuspectModel selectedSuspect = selected as SuspectModel;
+
+            if (selectedSuspect.isGuilty)
+                isGuilty = true;
+            else
+                isGuilty = false;
+
+            return isGuilty;
+        }
+
         public static string ShowAnswerToAskedQuestion(string buttonName, object selectedItem)
         {
             var selectedSuspect = selectedItem as SuspectModel;

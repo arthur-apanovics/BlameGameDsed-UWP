@@ -30,7 +30,8 @@ namespace BlameGame
 
         private void btnCharge_Click(object sender, RoutedEventArgs e)
         {
-            CheckIfSuspectIsCriminal(SuspectGrid.SelectedItem);
+            bool guilty = SuspectInteractions.CheckIfSuspectIsCriminal(SuspectGrid.SelectedItem);
+            BlameSuspect(guilty);
         }
 
         private void btnQ1_Click(object sender, RoutedEventArgs e)
@@ -68,10 +69,9 @@ namespace BlameGame
         ///  Methods used for button clicks
         /// </summary>
 
-        private void CheckIfSuspectIsCriminal(object selected)
+        private void BlameSuspect(bool guilt)
         {
-            SuspectModel selectedSuspect = selected as SuspectModel;
-            if (selectedSuspect.isGuilty)
+            if (guilt)
                 GameWasWon();
             else
                 GameOverMethod("You blamed the wrong suspect.\nShame on you!");

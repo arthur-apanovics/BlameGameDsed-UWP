@@ -6,7 +6,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace BlameGame
 {
-    class Suspects
+    public class Suspects
     {
         /// <summary>
         /// This class is used to construct suspects on the game page.
