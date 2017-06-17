@@ -1,11 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameGame", "BlameGame\BlameGame.csproj", "{4680182E-EC53-42D2-8FEA-E200C6F2C0FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlameGame.Tests", "BlameGame.Tests\BlameGame.Tests.csproj", "{CF5B31C3-5655-434C-BF9E-3426687B3F36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadmeAssets", "ReadmeAssets", "{D9938AB5-108E-40D8-9C64-F46A02C81DBA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\blame_game.gif = ..\..\..\Desktop\blame_game.gif
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\briefing.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\briefing.png
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\game.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\game.png
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\item.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\item.png
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\solution.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\solution.png
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\thumb.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\thumb.png
+		D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\victory.png = D:\Google Drive\CV\web\portfolio-web\Project-screenshots\blame-game\victory.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
